@@ -51,6 +51,12 @@ function init(self)
 	go.animate("/blend_lighten_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
 	go.animate("/blend_lighten_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
 
+	-- Screen
+	go.animate("/blend_screen_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_screen_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_screen_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_screen_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+		
 		
 		
 end

@@ -19,11 +19,15 @@ Blending Modes:
 * Lighten
 * Screen
 * Color Dodge
+* Linear Dodge (Add)
+---
+* Overlay
 
 
 Not Supported (yet?):
 
 * Dissolve (cross fade)
 * Darker Color
+* Lighter Color
 
 TODO helper functions

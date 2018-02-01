@@ -27,6 +27,26 @@ function init(self)
 	go.animate("/blend_darken_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
 	go.animate("/blend_darken_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
 	
+	-- Multiply
+	go.animate("/blend_multiply_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_multiply_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_multiply_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_multiply_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+
+	-- Color Burn
+	go.animate("/blend_color_burn_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_color_burn_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_color_burn_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_color_burn_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+	
+	-- Linear Burn
+	go.animate("/blend_linear_burn_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_linear_burn_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_linear_burn_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_linear_burn_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+
+	
+		
 end
 
 function final(self)

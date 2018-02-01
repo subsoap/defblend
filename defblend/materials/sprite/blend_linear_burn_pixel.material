@@ -1,7 +1,7 @@
 name: "sprite"
 tags: "tile"
 vertex_program: "/builtins/materials/sprite.vp"
-fragment_program: "/defblend/materials/sprite/blend_multiply.fp"
+fragment_program: "/defblend/materials/sprite/blend_linear_burn.fp"
 vertex_constants {
   name: "view_proj"
   type: CONSTANT_TYPE_VIEWPROJ

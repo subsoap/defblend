@@ -1,4 +1,4 @@
-go.property("opacity", 50)
+go.property("opacity", 0)
 
 function init(self)
 	self.opacity = 0.0
@@ -9,17 +9,17 @@ function init(self)
 	self.a_time = 15
 
 	-- Color Example
-	go.animate("/color#sprite", "blend_normal.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
-	go.animate("/color#sprite", "blend_normal.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
-	go.animate("/color#sprite", "blend_normal.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)	
+	go.animate("/color#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/color#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/color#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)	
 	go.animate("#controller", "opacity", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
-	go.set("/color#sprite", "blend_normal.w", 1.0)
+	go.set("/color#sprite", "blend.w", 1.0)
 
 	-- Normal
-	go.animate("/blend_normal_sprite#sprite", "blend_normal.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
-	go.animate("/blend_normal_sprite#sprite", "blend_normal.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
-	go.animate("/blend_normal_sprite#sprite", "blend_normal.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
-	go.animate("/blend_normal_sprite#sprite", "blend_normal.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)
+	go.animate("/blend_normal_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_normal_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_normal_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_normal_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)
 
 	-- Darken
 	go.animate("/blend_darken_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
@@ -45,7 +45,13 @@ function init(self)
 	go.animate("/blend_linear_burn_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
 	go.animate("/blend_linear_burn_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
 
-	
+	-- Lighten
+	go.animate("/blend_lighten_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_lighten_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_lighten_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_lighten_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+
+		
 		
 end
 

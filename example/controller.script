@@ -1,0 +1,46 @@
+go.property("opacity", 50)
+
+function init(self)
+	self.opacity = 0.0
+	
+	self.r_time = 3
+	self.g_time = 4
+	self.b_time = 6
+	self.a_time = 15
+	
+	go.animate("/color#sprite", "blend_normal.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/color#sprite", "blend_normal.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/color#sprite", "blend_normal.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)	
+	go.animate("#controller", "opacity", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+	go.set("/color#sprite", "blend_normal.w", 1.0)
+
+
+	go.animate("/blend_normal_sprite#sprite", "blend_normal.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_normal_sprite#sprite", "blend_normal.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_normal_sprite#sprite", "blend_normal.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)		
+	go.animate("/blend_normal_sprite#sprite", "blend_normal.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)		
+end
+
+function final(self)
+	-- Add finalization code here
+	-- Remove this function if not needed
+end
+
+function update(self, dt)
+	label.set_text("/opacity_label#opacity", "Opacity : " .. tostring(go.get("#controller", "opacity")))
+end
+
+function on_message(self, message_id, message, sender)
+	-- Add message-handling code here
+	-- Remove this function if not needed
+end
+
+function on_input(self, action_id, action)
+	-- Add input-handling code here
+	-- Remove this function if not needed
+end
+
+function on_reload(self)
+	-- Add reload-handling code here
+	-- Remove this function if not needed
+end

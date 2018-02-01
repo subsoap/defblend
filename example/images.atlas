@@ -1,0 +1,9 @@
+images {
+  image: "/example/lenna.png"
+}
+images {
+  image: "/example/freggy.png"
+}
+margin: 2
+extrude_borders: 0
+inner_padding: 0

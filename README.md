@@ -17,6 +17,8 @@ Blending Modes:
 * Linear Burn
 ---
 * Lighten
+* Screen
+* Color Dodge
 
 
 Not Supported (yet?):

@@ -27,10 +27,29 @@ Blending Modes:
 * Vivid Light
 * Linear Light
 
+Todo :
+* Pin Light
+* Hard Mix
+---
+* Difference
+* Exclusion
+* Subtract
+* Divide
+---
+* Average
+* Glow
+* Negation
+* Phoenix
+* Reflect
+
 Not Supported (yet?):
 
 * Dissolve (cross fade)
 * Darker Color
 * Lighter Color
+* Hue
+* Saturation
+* Color
+* Luminosity
 
 TODO helper functions

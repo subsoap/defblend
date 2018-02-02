@@ -69,13 +69,36 @@ function init(self)
 	go.animate("/blend_linear_dodge_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
 	go.animate("/blend_linear_dodge_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
 
-	-- Linear Dodge (Add)
+	-- Overlay
 	go.animate("/blend_overlay_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
 	go.animate("/blend_overlay_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
 	go.animate("/blend_overlay_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
 	go.animate("/blend_overlay_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
 					
-		
+	-- Soft Light
+	go.animate("/blend_soft_light_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_soft_light_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_soft_light_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_soft_light_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+
+	-- Hard Light (It's the same as Overlay?)
+	go.animate("/blend_hard_light_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_hard_light_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_hard_light_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_hard_light_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+	
+	-- Vivid Light
+	go.animate("/blend_vivid_light_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_vivid_light_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_vivid_light_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_vivid_light_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+
+	-- Linear Light
+	go.animate("/blend_linear_light_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_linear_light_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_linear_light_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_linear_light_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+					
 end
 
 function final(self)

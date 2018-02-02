@@ -22,7 +22,10 @@ Blending Modes:
 * Linear Dodge (Add)
 ---
 * Overlay
-
+* Soft Light
+* Hard Light
+* Vivid Light
+* Linear Light
 
 Not Supported (yet?):
 

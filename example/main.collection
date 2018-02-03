@@ -2822,7 +2822,7 @@ embedded_instances {
   "  type: \"sprite\"\n"
   "  data: \"tile_set: \\\"/example/images.atlas\\\"\\n"
   "default_animation: \\\"freggy\\\"\\n"
-  "material: \\\"/defblend/materials/sprite/blend_linear_light_pixel.material\\\"\\n"
+  "material: \\\"/defblend/materials/sprite/blend_average_pixel.material\\\"\\n"
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"

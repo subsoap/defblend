@@ -37,15 +37,8 @@ Blending Modes:
 * Average
 * Glow
 * Negation
-
-* Reflect
-Todo :
-
-
-
-
 * Phoenix
-
+* Reflect
 
 Not Supported (yet?):
 

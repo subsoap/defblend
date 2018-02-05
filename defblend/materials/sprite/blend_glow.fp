@@ -3,12 +3,12 @@ varying mediump vec2 var_texcoord0;
 uniform lowp sampler2D DIFFUSE_TEXTURE;
 uniform lowp vec4 blend;
 
-float reflect(float base, float blend) {
+float rreflect(float base, float blend) {
 	return (blend==1.0)?blend:min(base*base/(1.0-blend),1.0);
 }
 
 float glow(float base, float blend) {
-	return reflect(blend,base);
+	return rreflect(blend,base);
 }
 
 void main()

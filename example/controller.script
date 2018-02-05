@@ -99,13 +99,76 @@ function init(self)
 	go.animate("/blend_linear_light_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
 	go.animate("/blend_linear_light_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
 
+	-- Pin Light
+	go.animate("/blend_pin_light_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_pin_light_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_pin_light_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_pin_light_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+
+	-- Hard Mix
+	go.animate("/blend_hard_mix_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_hard_mix_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_hard_mix_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_hard_mix_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+
+	-- Difference
+	go.animate("/blend_difference_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_difference_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_difference_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_difference_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+
+	-- Exclusion
+	go.animate("/blend_exclusion_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_exclusion_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_exclusion_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_exclusion_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+
+				
+	-- Subtract
+	go.animate("/blend_subtract_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_subtract_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_subtract_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_subtract_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+
+	-- Divide
+	go.animate("/blend_divide_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_divide_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_divide_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_divide_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+			
 	-- Average
 	go.animate("/blend_average_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
 	go.animate("/blend_average_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
 	go.animate("/blend_average_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
 	go.animate("/blend_average_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
-	
-						
+
+	-- Glow
+	go.animate("/blend_glow_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_glow_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_glow_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_glow_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+		
+		
+	-- Negation
+	go.animate("/blend_negation_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_negation_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_negation_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_negation_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+
+	-- Phoenix
+	go.animate("/blend_phoenix_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_phoenix_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_phoenix_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_phoenix_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+		
+
+		-- Reflect
+	go.animate("/blend_reflect_sprite#sprite", "blend.x", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.r_time)
+	go.animate("/blend_reflect_sprite#sprite", "blend.y", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.g_time)
+	go.animate("/blend_reflect_sprite#sprite", "blend.z", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.b_time)
+	go.animate("/blend_reflect_sprite#sprite", "blend.w", go.PLAYBACK_LOOP_PINGPONG, 1.0, go.EASING_OUTINQUAD, self.a_time)	
+
+								
 end
 
 function final(self)

@@ -26,8 +26,6 @@ Blending Modes:
 * Hard Light
 * Vivid Light
 * Linear Light
-
-Todo :
 * Pin Light
 * Hard Mix
 ---
@@ -39,8 +37,15 @@ Todo :
 * Average
 * Glow
 * Negation
-* Phoenix
+
 * Reflect
+Todo :
+
+
+
+
+* Phoenix
+
 
 Not Supported (yet?):
 

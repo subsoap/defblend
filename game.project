@@ -1,6 +1,6 @@
 [project]
 title = DefBlend
-dependencies = https://github.com/rgrams/rendercam/archive/master.zip
+dependencies#0 = https://github.com/rgrams/rendercam/archive/master.zip
 
 [library]
 include_dirs = defblend
